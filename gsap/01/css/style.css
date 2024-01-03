@@ -6,43 +6,93 @@
   box-sizing: border-box;
 }
 
-#wrap {
-  width: 100%;
-  height: 200vh;
-  background: #EBEAE7;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+li {
+  list-style: none;
 }
-#wrap .container {
-  width: 1440px;
-  height: 100%;
-  border: 1px solid red;
-}
-#wrap .full_screen {
+
+#wrap section {
   width: 100%;
   height: 100vh;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 100vh;
-  margin-top: 400px;
-  overflow: hidden;
+  background: #23282a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
 }
-#wrap .full_screen .title {
-  display: inline-block;
+#wrap .con01 .title {
   font-family: "Lato", sans-serif;
-  color: #171717;
-  font-weight: 900;
-  letter-spacing: -0.8px;
+  font-size: 120px;
+  text-transform: uppercase;
+  line-height: 1.1;
 }
-#wrap .img01_div {
-  width: 100%;
-  height: 500px;
+#wrap .con01 .title span {
+  -webkit-text-stroke: 2px #b1dd40;
+  color: transparent;
+  display: block;
+}
+#wrap .con02 ul {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap .con02 ul li {
+  width: 22%;
+  height: 300px;
+  background: #fed700;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+}
+#wrap .con03 {
+  position: relative;
   overflow: hidden;
-  margin-bottom: 500px;
 }
-#wrap .img01_div > img {
-  width: 100%;
-  transform-origin: center;
+#wrap .con03 .contitle {
+  font-family: "Lato", sans-serif;
+  font-size: 100px;
+  -webkit-text-stroke: 2px #b1dd40;
+  color: transparent;
+}
+#wrap .con03 span {
+  display: block;
+  width: 250px;
+  height: 350px;
+  background: #fee8b0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+}
+#wrap .con03 span.a {
+  background: #ffbbcc;
+  transform: translate(-50%, -50%) rotate(12deg);
+}
+#wrap .con03 span.b {
+  background: #ffcccc;
+  transform: translate(-50%, -50%) rotate(-15deg);
+}
+#wrap .con03 span.c {
+  background: #df9773;
+  transform: translate(-50%, -50%) rotate(18deg);
+}
+#wrap .con03 span.d {
+  background: #d9eccb;
+  transform: translate(-50%, -50%) rotate(-3deg);
+}
+#wrap .con03 span.e {
+  background: #fcfcfc;
+  transform: translate(-50%, -50%) rotate(12deg);
 }
